@@ -11,9 +11,9 @@ View the contents of `Setup.ps1` to see what it installs.
 
 ## Run Setup
 
-1. Open a Powershell prompt via WIN+R -> powershell.
+1. Open a Powershell prompt via `WIN+R -> powershell`.
 2. Type `.\Setup.ps1` and press enter.
-3. Choose Yes If UAC is installed when you are prompted to run as Administrator.  
+3. Choose `Yes` if you are prompted to run as Administrator.  
 4. Enjoy.
 
 
