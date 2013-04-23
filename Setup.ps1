@@ -80,10 +80,12 @@ cinstm gow
 cinstm nuget.commandline
 cinstm kdiff3
 cinstm psake
-cinstm posh-git
+cinstm poshgit
+cinstm putty
 cinstm windbg
 cinstm fiddler4
 cinstm sublimetext2
+
 
 #cinstm VisualStudio2012Premium
 #cinstm JetBrains.Webstorm
