@@ -74,6 +74,10 @@ cinstm grepwin
 cinstm curl
 cinstm sysinternals
 
+# Automation Tools
+cinstm vagrant
+cinstm virtualbox
+
 # Dev Tools
 cinstm git.install
 cinstm gow
