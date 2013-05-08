@@ -49,14 +49,11 @@ Set-ExecutionPolicy Unrestricted
 
 # Dev Languages
 cinstm nodejs.install
-
-
 cinstm ruby.devkit
 cinstm python 
 
 
 # .NET frameworks
-
 Write-Host "Grabbing required frameworks"
 cinst netframework2 -source webpi
 cinst NETFramework35 -source webpi
@@ -68,80 +65,43 @@ cinst WindowsInstaller45 -source webpi
 
 
 # Windows Features
-
 cwindowsfeatures IIS-WebServerRole
 
-
-
 # Browsers
-
 cinstm GoogleChrome
-
 cinstm Firefox
-
 cinstm GoogleTalk
 
-
-
-
 # Tools
-
 cinstm dropbox
-
 cinstm Console2
-
 cinstm notepadplusplus.install
-
 cinstm 7zip.install
-
 cinstm grepwin
-
 cinstm curl
-
 cinstm sysinternals
-
-
 cinstm gow
-
 cinstm putty
 
-
 # Automation Tools
-
 cinstm vagrant
-
 cinstm virtualbox
 
-
-
 # Dev Tools
-
 cinstm git.install
-
 cinstm nuget.commandline
-
 cinstm kdiff3
-
 cinstm psake
-
 cinstm poshgit
-
 cinstm windbg
-
 cinstm fiddler4
 
-
 # IDE's
-
 cinstm sublimetext2
-
-
 #cinstm VisualStudio2012Premium
 #cinstm JetBrains.Webstorm
 #cinstm resharper
 #cinstm dotpeek
 
-
 # Dev Databases
-
 #cinstm mongodb
