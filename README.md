@@ -5,6 +5,10 @@ This powershell script uses [Chocolatey][choco] application manager to simplify 
 
 This script will prompt you to elevate it to Administrator once, after which it will run all installs as administrator.
 
+## QuickInstallation
+
+ (new-object Net.WebClient).DownloadString("https://raw.github.com/lancehunt/Dev.Setup/master/GetSetup.ps1") | iex
+
 ## Manual Installation
 
 1. Open a Powershell prompt via `WIN+R -> powershell`.

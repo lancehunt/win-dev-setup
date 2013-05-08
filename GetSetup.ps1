@@ -9,12 +9,13 @@ function Install-DevSetup {
     Write-Host Downloading Dev.Setup from https://github.com/lancehunt/Dev.Setup/raw/master/Dev.Setup/Setup.ps1
     $client = (New-Object Net.WebClient)
     $client.Proxy.Credentials = [System.Net.CredentialCache]::DefaultNetworkCredentials
-    $client.DownloadFile("https://github.com/lancehunt/Dev.Setup/raw/master/Dev.Setup/Setup.ps1", $Destination + "\Dev.Setup\Setup.ps1")
+    Write-Host $Destination
+    $client.DownloadFile("https://raw.github.com/lancehunt/Dev.Setup/master/Setup.ps1", "$Destination\Dev.Setup\Setup.ps1")
 
     $executionPolicy  = (Get-ExecutionPolicy)
     $executionRestricted = ($executionPolicy -eq "Restricted")
     if ($executionRestricted){
-        Write-Warning @"Your execution policy is $executionPolicy, this means you will not be able import or use any scripts including modules."
+        Write-Warning "Your execution policy is $executionPolicy, this means you will not be able import or use any scripts including modules."
     }
 
     if (!$executionRestricted){
