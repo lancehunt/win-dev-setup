@@ -58,13 +58,13 @@ cinstm python
 # .NET frameworks
 
 Write-Host "Grabbing required frameworks"
-cinstm netframework2 -source webpi
-cinstm NETFramework35 -source webpi
-cinstm NETFramework4 -source webpi
-cinstm NETFramework4Update402 -source webpi
-cinstm NETFramework4Update402_KB2544514_Only -source webpi
-cinstm WindowsInstaller31 -source webpi
-cinstm WindowsInstaller45 -source webpi
+cinst netframework2 -source webpi
+cinst NETFramework35 -source webpi
+cinst NETFramework4 -source webpi
+cinst NETFramework4Update402 -source webpi
+cinst NETFramework4Update402_KB2544514_Only -source webpi
+cinst WindowsInstaller31 -source webpi
+cinst WindowsInstaller45 -source webpi
 
 
 # Windows Features
