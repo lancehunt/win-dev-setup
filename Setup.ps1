@@ -34,60 +34,105 @@ function Use-RunAs
     }  
 } 
 
+
 Use-RunAs
+
 
 Set-ExecutionPolicy Unrestricted
 
-# Chocolatey
-iex ((new-object net.webclient).DownloadString('http://chocolatey.org/install.ps1'))
+
+
+# Package Managers
+ (new-object net.webclient).DownloadString('http://chocolatey.org/install.ps1') | iex
+
+ (new-object Net.WebClient).DownloadString("http://psget.net/GetPsGet.ps1") | iex
 
 # Dev Languages
-cinstm ruby.devkit
-cinstm python 
 cinstm nodejs.install
 
+
+cinstm ruby.devkit
+cinstm python 
+
+
 # .NET frameworks
+
 Write-Host "Grabbing required frameworks"
-cinst netframework2 -source webpi
-cinst NETFramework35 -source webpi
-cinst NETFramework4 -source webpi
-cinst NETFramework4Update402 -source webpi
-cinst NETFramework4Update402_KB2544514_Only -source webpi
-cinst WindowsInstaller31 -source webpi
-cinst WindowsInstaller45 -source webpi
+cinstm netframework2 -source webpi
+cinstm NETFramework35 -source webpi
+cinstm NETFramework4 -source webpi
+cinstm NETFramework4Update402 -source webpi
+cinstm NETFramework4Update402_KB2544514_Only -source webpi
+cinstm WindowsInstaller31 -source webpi
+cinstm WindowsInstaller45 -source webpi
+
 
 # Windows Features
+
 cwindowsfeatures IIS-WebServerRole
 
+
+
 # Browsers
+
 cinstm GoogleChrome
+
 cinstm Firefox
+
 cinstm GoogleTalk
 
 
+
+
 # Tools
+
 cinstm dropbox
+
 cinstm Console2
+
 cinstm notepadplusplus.install
+
 cinstm 7zip.install
+
 cinstm grepwin
+
 cinstm curl
+
 cinstm sysinternals
 
+
+cinstm gow
+
+cinstm putty
+
+
 # Automation Tools
+
 cinstm vagrant
+
 cinstm virtualbox
 
+
+
 # Dev Tools
+
 cinstm git.install
-cinstm gow
+
 cinstm nuget.commandline
+
 cinstm kdiff3
+
 cinstm psake
+
 cinstm poshgit
-cinstm putty
+
 cinstm windbg
+
 cinstm fiddler4
+
+
+# IDE's
+
 cinstm sublimetext2
 
 
@@ -96,5 +141,7 @@ cinstm sublimetext2
 #cinstm resharper
 #cinstm dotpeek
 
+
 # Dev Databases
+
 #cinstm mongodb
