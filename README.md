@@ -7,14 +7,16 @@ This script will prompt you to elevate it to Administrator once, after which it 
 
 ## Quick Installation
 
+In your PowerShell console execute:
 	(new-object Net.WebClient).DownloadString("https://raw.github.com/lancehunt/Dev.Setup/master/GetSetup.ps1") | iex
 
 ## Manual Installation
 
-1. Open a Powershell prompt via `WIN+R -> powershell`.
-2. Type `.\Setup.ps1` and press enter.
+1. Download `Setup.ps1` from https://github.com/lancehunt/Dev.Setup/ 
+2. Execute `.\Setup.ps1`
 3. Choose `Yes` if you are prompted to run as Administrator.  
-4. Enjoy.
+
+Enjoy.
 
 
 Note: if you do not have [Chocolatey][choco] installed, this script will automatically install it for you.
