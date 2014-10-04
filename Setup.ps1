@@ -65,7 +65,7 @@ cinst WindowsInstaller45 -source webpi
 
 
 # Windows Features
-cwindowsfeatures IIS-WebServerRole
+choco windowsfeatures IIS-WebServerRole
 
 # Browsers
 cinstm GoogleChrome
