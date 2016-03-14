@@ -48,56 +48,56 @@ Set-ExecutionPolicy Unrestricted
  (new-object Net.WebClient).DownloadString("http://psget.net/GetPsGet.ps1") | iex
 
 # Dev Languages
-cinstm nodejs.install
-cinstm ruby.devkit
-cinstm python 
+cinst nodejs.install
+cinst ruby.devkit
+cinst python 
 
 
 # .NET frameworks
-Write-Host "Grabbing required frameworks"
-cinst netframework2 -source webpi
-cinst NETFramework35 -source webpi
-cinst NETFramework4 -source webpi
-cinst NETFramework4Update402 -source webpi
-cinst NETFramework4Update402_KB2544514_Only -source webpi
-cinst WindowsInstaller31 -source webpi
-cinst WindowsInstaller45 -source webpi
+#Write-Host "Grabbing required frameworks"
+#cinst netframework2 -source webpi
+#cinst NETFramework35 -source webpi
+#cinst NETFramework4 -source webpi
+#cinst NETFramework4Update402 -source webpi
+#cinst NETFramework4Update402_KB2544514_Only -source webpi
+#cinst WindowsInstaller31 -source webpi
+#cinst WindowsInstaller45 -source webpi
 
 
 # Windows Features
 choco windowsfeatures IIS-WebServerRole
 
 # Browsers
-cinstm GoogleChrome
-cinstm Firefox
-cinstm GoogleTalk
+cinst GoogleChrome
+#cinst Firefox
+#cinst GoogleTalk
 
 # Tools
-cinstm dropbox
-cinstm Console2
-cinstm notepadplusplus.install
-cinstm 7zip.install
-cinstm grepwin
-cinstm curl
-cinstm sysinternals
-cinstm gow
-cinstm putty
+cinst dropbox
+cinst Console2
+cinst notepadplusplus.install
+cinst 7zip.install
+cinst grepwin
+cinst curl
+cinst sysinternals
+cinst gow
+cinst putty
 
 # Automation Tools
-cinstm vagrant
-cinstm virtualbox
+cinst vagrant
+cinst virtualbox
 
 # Dev Tools
-cinstm git.install
-cinstm nuget.commandline
-cinstm kdiff3
-cinstm psake
-cinstm poshgit
-cinstm windbg
-cinstm fiddler4
+cinst git.install
+cinst nuget.commandline
+cinst kdiff3
+cinst psake
+cinst poshgit
+cinst windbg
+cinst fiddler4
 
 # IDE's
-cinstm sublimetext2
+#cinst sublimetext2
 #cinstm VisualStudio2012Premium
 #cinstm JetBrains.Webstorm
 #cinstm resharper
